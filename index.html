@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DriveEasy Rentals: Discover Your Drive: Explore Our Latest Car Models</title>
+
+        <!-- remix icon cdn link from remix icon github repo -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- favcion -->
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <!-- swiper js -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    </head>
+    <body>
+        
+        <div class="main">
+
+            <div id="preloader"></div>
+
+            <!--navbar-section -->
+            <div class="nav">
+                <h2><span>DriveEasy</span> Rentals</h2>
+                <div class="nav-list">
+                    <h4>About Us</h4>
+                    <h4>Models</h4>
+                    <h4>Rentals</h4>
+                    <h4>Reviews</h4>
+                    <i class="ri-menu-3-fill" onclick=showSidebar()></i>
+                </div>
+            </div>
+
+            <!-- sidebar section -->
+            <div class="side">
+                <img onclick=hideSidebar() src="images/close-button.png" alt="">
+                <div class="side-list">
+                    <h4 onclick=hideSidebar()>About Us</h4>
+                    <h4 onclick=hideSidebar()>Models</h4>
+                    <h4 onclick=hideSidebar()>Rentals</h4>
+                    <h4 onclick=hideSidebar()>Reviews</h4>
+                </div>
+            </div>
+
+            <!-- hero-section -->
+            <div class="content">
+                <div class="left">
+                <h1>Discover Your Drive: <span>Explore Our Latest Car Models</span></h1>
+                <p>Discover Your Drive: Explore Our Latest Car Models</p>
+                <button>Explore Now</button>
+                </div>
+                
+                <div class="right">
+                    <img src="images/205830859_10815908.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+
+         <!-- body-section  -->
+         <div id="body">
+            <h1><span>OverView Of</span> Models</h1>
+         </div>
+
+
+
+        <!-- swiper js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <script src="js/script.js"></script>
+
+
+    </body>
+</html>
