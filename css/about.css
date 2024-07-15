@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --secondary-color: #000106;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#preloader{
+    background: #fff url(../images/preloadergif.gif) no-repeat center center;
+    color: white;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav{
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid #dadada;
+    /* box-shadow: #fff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 4vw;
+    padding-left: 4vw;
+}
+
+.nav h2{
+    font-weight: bold;
+    font-size: 2em;
+    color: var(--secondary-color);
+}
+
+.nav h2 span{
+    color: lightseagreen;
+    text-shadow: 1px 1px var(--secondary-color);
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vw;
+    cursor: pointer;
+}
+
+.navlist h4{
+    transition: 1.1s ease-out;
+}
+
+.nav-list h4:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.nav h4{
+    font-size: 1.1vw;
+}
+
+
+.nav h2{
+    font-size: 1.8vw;
+    font-weight: 700;
+}
+
+.nav i{
+    font-weight: 800;
+    display: none;
+}
+
+/* body-section */
+.about-content{
+    /* calc function is used for arithmetic operation */
+    /* height: calc(100% - 80px); */
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    text-shadow: 1px 1px white;
+}
+
+.about-content span{
+    color: lightseagreen;
+    text-shadow: 1px 1px var(--secondary-color);
+}
+
+.about-content{
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX(10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+
+/* sidebar */
+.side{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type: none;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: black;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 260px;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+}
+
+#icon{
+    display: block;
+}
+
+.side-list h4{
+    width: 100%;
+    display: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6vw;
+    margin-left: 3.8vw;
+    margin-top: 10vw;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.side-list h4{
+    transition: 1.1s ease-out;
+}
+
+.side-list h4:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+
+.side button{
+    font-size: 4.6vw;
+    padding: 2.6vw 2.6vw;
+    margin-left: 3.8vw;
+    margin-top: 7.8vw;
+    background-color: lightseagreen;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1.2s ease-out;
+}
+
+.side img {
+    height: 1.8vw;
+    margin-left: 2.4vw;
+    margin-top: 20px; 
+    display: block;
+    transition: 0.1s ease-in;
+}
+
+
+.side img:hover{
+    transform: rotate(45deg)
+} 
+
+/* making sidebar-image responsive */
+@media screen and (max-width: 800px) {
+    .side img {
+        height: 3.8vw;
+        transition: transform 0.3s ease; 
+        cursor: pointer;
+    }
+    .side img:hover {
+        transform: rotate(-90deg);
+    }
+    .side-list h4{
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    }
+}
+
+/* making navbar responsive */
+@media (max-width: 800px) {
+    .nav{
+   
+        padding: 0 6vw;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 5.1vw;
+    }
+    .nav h4{
+        font-size: 4.5vw;
+        display: none;
+    }
+    .nav i{
+        display: block;
+        font-size: 6vw;
+    }
+    .nav button{
+        display: none;
+    }
+    #icon{
+        display: none;
+    }
+    .content{
+        height: calc(100%-60px);
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 50%;
+        padding: 4vw 6vw;
+    }
+    .right{
+       width: 100%;
+       height: 50%;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    .left p{
+        font-size: 4vw;
+        font-weight: bold;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+    .content button{
+        padding: 3vw 6vw;
+        border-radius: 32px;
+        font-size: 4vw;
+        font-weight: 600;
+    }
+}
