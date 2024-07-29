@@ -29,6 +29,7 @@
                     <h4><a href="index.html" style="list-style-type: none; text-decoration: none; color: black;">Home</a></h4>
                     <h4><a href="About Us.html" style="list-style-type: none; text-decoration: none; color: black;">About Us</a></h4>
                     <h4>Rentals</h4>
+                    <button><a href="#" style="text-decoration: none; color: #fff;">Sign Up</a></button>
                     <i class="ri-menu-3-fill" onclick=showSidebar()></i> 
                 </div>
             </div>
@@ -40,6 +41,7 @@
                     <h4 onclick=hideSidebar()><a href="index.html" style="list-style-type: none; text-decoration: none; color: black;">Home</a></h4>
                     <h4 onclick=hideSidebar()><a href="About Us.html" style="list-style-type: none; text-decoration: none; color: black;">About Us</a></h4>
                     <h4 onclick=hideSidebar()>Rentals</h4>
+                    <button><a href="#" style="text-decoration: none; color: #fff;">Sign Up</a></button>
                 </div>
             </div>
 
@@ -55,10 +57,61 @@
                     <img src="images/205830859_10815908.png" alt="">
                 </div>
                 
+            </div>             
+
+            <!-- body section -->
+            <div id="explore-us" class="uni-padding">
+                <h1 class="heading">EXPLORE MORE</h1>
+                <div class="body-explore">
+                    <span><i class="ri-map-pin-fill"></i></span>
+                    <h2>Location</h2>
+                    <p>Select your desired branch for rent from our extensive network of cars.</p>
+                </div>
+                <div class="body-explore">
+                    <span><i class="ri-calendar-check-fill"></i></span>
+                    <h2>Choose Your Date</h2>
+                    <p>Specify the date and time you wish to pick up your car with flexible scheduling options.</p>
+                </div>
+                <div class="body-explore">
+                    <span><i class="ri-bookmark-3-fill"></i></span>
+                    <h2>Rent Your Car</h2>
+                    <p>Browse through our wide range of vehicles and choose the one that best suits your needs.</p>
+                </div>
             </div>
+
+            <!-- connect with us -->
+            <div class="connect">
+                <div class="left-connect">
+                <h1>Connect With Us<span> Rent Your Favourite Car :-</span></h1>
+                <p>Begin Your Dream Journey</p>
+                </div>
+                
+                <div class="right-contact">
+                    <form onsubmit="submitForm(); reset(); return false">
+                        <h2>Connect With Us</h2>
+
+                        <label for="name">Name:</label>
+                        <input type="text"  id="name" placeholder="Enter Your Name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+
+                        <label for="subject">Phone No:</label>
+                        <input type="number" id="Phone No" name="subject" placeholder="Enter Your Phone No" required>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- footer-section -->
+             
+
         </div>
         
         <script src="js/script.js"></script>
+
+        <!-- smtp js cdn -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
     </body>
