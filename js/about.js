@@ -1,19 +1,18 @@
-// showing the sidebar
-function show(){
-    const sidebar = document.querySelector('.side')
-    sidebar.style.display = 'flex'
-}
-
-
-// hiding the sidebar
-function hide(){
-    const hidesidebar = document.querySelector('.side')
-    hidesidebar.style.display = 'none'
+// Show the sidebar
+const show = () => {
+    const sidebar = document.querySelector('.side');
+    sidebar.style.display = 'flex';
 };
 
-// preloader - hiding the preloader 
-var loader = document.getElementById("preloader");
+// Hide the sidebar
+const hide = () => {
+    const hidesidebar = document.querySelector('.side');
+    hidesidebar.style.display = 'none';
+};
 
-window.addEventListener("load", function(){
-    loader.style.display = "none"
+// Preloader - hiding the preloader
+const loader = document.getElementById("preloader");
+
+window.addEventListener("load", () => {
+    loader.style.display = "none";
 });
