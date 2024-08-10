@@ -290,7 +290,7 @@ html, body{
     box-sizing: border-box;
 }
   
-  .body-explore h2{
+.body-explore h2{
     color: black;
     cursor: pointer;
 }
@@ -426,6 +426,45 @@ html, body{
     background-color: rgb(71, 146, 142);;
 }
 
+/* footer-section */
+.footer{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 2vw;
+}
+
+.imp-links ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 6vw;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.imp-links li:hover{
+    text-decoration: underline;
+}
+
+/* making footer-section responsive */
+@media screen and (max-width: 800px) {
+    .footer {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 6vw;
+    }
+    
+    .imp-links ul {
+        display: flex;
+        justify-content: center;
+        gap: 5.8vw; 
+    }
+
+    .imp-links li {
+        font-size: 0.9em; 
+    }
+}
 /* making connect with us responsive */
 @media screen and (max-width: 800px) {
     .connect {
